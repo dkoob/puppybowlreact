@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
+import UploadPlayer from "./UploadPlayer"
 
-const AllTeams = ({allTeams, allPlayers}) => {
+const AllTeams = ({allTeams, allPlayers, createPlayer}) => {
 
     return (
         <div>
@@ -13,7 +14,9 @@ const AllTeams = ({allTeams, allPlayers}) => {
                     </Link>
                 )
             })}
+            <UploadPlayer createPlayer={createPlayer}/>
         </div>
+        
     )
 }
 

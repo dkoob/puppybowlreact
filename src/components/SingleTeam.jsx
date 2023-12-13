@@ -13,13 +13,14 @@ function SingleTeam({allPlayers}) {
             )
         }
     })
-    console.log(checkPlayer)
 
     return (
         <div>
             <h1>View team {teamId}'s roster below!</h1>
             <hr />
             {checkPlayer}
+            <br />
+            <Link to='/teams'>Return to all teams</Link>
         </div>
     );
 }
